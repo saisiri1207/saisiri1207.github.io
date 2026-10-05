@@ -25,6 +25,30 @@
  .card .body { font-size: 14px; color: #4A4A45; line-height: 1.55; }
  .card .metric { font-size: 14px; font-weight: 600; color: #1F3864; line-height: 1.55; }
  nav a { color: #1A1A18; }
+ .glance {
+  margin-top: 28px;
+  background: #FFFFFF;
+  border: 1px solid #D6DEEC;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(31,56,100,0.06);
+ }
+ .glance-bar {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 16px;
+  background: #F4F7FC;
+  border-bottom: 1px solid #E4E9F2;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px; color: #6B7A94;
+ }
+ .glance-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+ .glance-body { padding: 18px 20px 16px; display: grid; grid-template-columns: 110px 1fr; gap: 8px 16px; }
+ .glance-key { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; font-weight: 600; color: #1F3864; }
+ .glance-val { font-size: 14px; color: #2A2A26; line-height: 1.45; }
+ .glance-head { grid-column: 1 / -1; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; color: #1F3864; margin: 4px 0 2px; }
+ @media (max-width: 780px) {
+ .glance-body { grid-template-columns: 90px 1fr; }
+ }
  @media (max-width: 780px) {
  nav .links { display: none; }
  .grid12 > div[style*="grid-column: span 3"] { grid-column: span 12 !important; margin-bottom: 8px; }
@@ -82,7 +106,28 @@
  </div>
  <div style="grid-column: span 9;">
  <p style="font-size: 19px; line-height: 1.75; color: #2A2A26; margin: 0 0 18px; font-family: 'Fraunces', Georgia, serif; font-weight: 400;">Financial and Business Analyst who turns financial and operational data into forecasts, variance analysis, and executive ready reporting across U.S. banking and international operations.</p>
- <p style="font-size: 16px; line-height: 1.75; color: #4A4A45; margin: 0;">My toolkit spans SQL, Power BI (DAX), Tableau, Python, R, and Excel. I use it to build KPI dashboards, driver based forecasts, and valuation models that hold up under scrutiny. At PNC, I work a $50M expense base, redesigned monthly reporting, and cut the month end close from 5 days to 3. Before that, I built forecasting and dashboard infrastructure at upGrad, BYJU'S, and Bharat Sanchar Nigam Ltd (BSNL).</p>
+ <p style="font-size: 16px; line-height: 1.75; color: #4A4A45; margin: 0 0 8px;">My toolkit spans SQL, Power BI (DAX), Tableau, Python, R, and Excel. I use it to build KPI dashboards, driver based forecasts, and valuation models that hold up under scrutiny. At PNC, I work a $50M expense base, redesigned monthly reporting, and cut the month end close from 5 days to 3. Before that, I built forecasting and dashboard infrastructure at upGrad, BYJU'S, and Bharat Sanchar Nigam Ltd (BSNL).</p>
+
+ <div class="glance" aria-label="At a glance identity card">
+ <div class="glance-bar">
+ <span class="glance-dot" style="background:#FF5F56;"></span>
+ <span class="glance-dot" style="background:#FFBD2E;"></span>
+ <span class="glance-dot" style="background:#27C93F;"></span>
+ <span style="margin-left:8px;">At a glance  ·  profile.sh --live</span>
+ </div>
+ <div class="glance-body">
+ <div class="glance-head">SYSTEM_INFO</div>
+ <div class="glance-key">Role</div><div class="glance-val">Financial Analyst FP&amp;A</div>
+ <div class="glance-key">Focus</div><div class="glance-val">variance analysis, KPI dashboards, forecasting</div>
+ <div class="glance-key">Stack</div><div class="glance-val">SQL, Power BI, Tableau, Python, Excel</div>
+ <div class="glance-key">Education</div><div class="glance-val">MS Business Analytics, MBA Accounting and Finance</div>
+ <div class="glance-key">Currently</div><div class="glance-val">PNC Financial Services Ops Finance FP&amp;A</div>
+ <div class="glance-head">CONTACT</div>
+ <div class="glance-key">LinkedIn</div><div class="glance-val"><a href="https://www.linkedin.com/in/saisiri1207">saisiri1207</a></div>
+ <div class="glance-key">Email</div><div class="glance-val"><a href="mailto:bandarusaisiri1207@gmail.com">bandarusaisiri1207@gmail.com</a></div>
+ <div class="glance-key">Site</div><div class="glance-val"><a href="https://saisiri1207.github.io/">saisiri1207.github.io</a></div>
+ </div>
+ </div>
  </div>
  </div>
  </div>
